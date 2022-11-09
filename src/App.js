@@ -187,20 +187,20 @@ function App() {
       </div>
       <div className='footer'>
         <div>
-          <p>Lorem</p>
-          <p>Ipsum</p>
-          <p>Lorem</p>
-          <p>Ipsum</p>
-        </div>
-        <div>
-          <p>Lorem</p>
-          <p>Ipsum</p>
+          <p>Contact</p>
+          <p>Newsletter</p>
           <p>Lorem</p>
           <p>Ipsum</p>
         </div>
         <div>
-          <p>Lorem</p>
-          <p>Ipsum</p>
+          <p>Who are we</p>
+          <p>About the dogs</p>
+          <p>What are NFTs</p>
+          <p>How can I buy an NFT</p>
+        </div>
+        <div>
+          <p>About the project</p>
+          <p>What's Next</p>
           <p>Lorem</p>
           <p>Ipsum</p>
         </div>
