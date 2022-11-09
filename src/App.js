@@ -228,6 +228,7 @@ function App() {
           <p>What's Next</p>
         </div>
       </div>
+      <div className='copy'>&copy; DogsForThePlanet</div>
     </div>
   )
 }

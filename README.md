@@ -1,6 +1,6 @@
 ## Blockchain Project Dogs for the Planet
 
-Instructions to launche the app
+Instructions to launch the app
 - Clone the repo
 - run `npm install`
 - run `npm start`
