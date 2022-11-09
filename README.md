@@ -15,7 +15,7 @@ Vous pouvez donc rejoindre notre cause en récupérant vos NFT en appuyant sur l
 
 Spécialistes en blockchain, nous implémentons notre site web de vente de NFT. Bien que chacun de nos tokens soit unique, tous s’inscrivent dans un même ensemble cohérent. Notre collection de "Swaggy Doggies" compte une centaine de chiens personnalisés aux looks complètement barrés. Vous pourrez jeter un coup d'oeil à cette collection grâce à notre carrousel. Le prix du mint coûte 0.005 ETH et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
 
-Pour finir, vous trouverez le total des fonds levés et qui seront par la suite reversés au niveau de "The dogs raised".
+Pour finir, vous trouverez le total des fonds levés, qui seront par la suite reversés, au niveau de "The dogs raised".
 
 ## En quoi la Blockchain est importante dans ce projet
 
