@@ -10,7 +10,32 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main-app h1 {
+.floating-img {
+    position: absolute;
+    left: -10vw;
+    top: -10vw;
+    height: 25vw;
+    width: 25vw;
+    animation: floating-img 60s linear infinite;
+    image-rendering: pixelated;
+}
+
+@keyframes floating-img {
+    50% {
+        rotate: 180deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+h3 {
+    font-size: 1.25em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
     font-size: 3em;
     color: #43FE95;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -28,11 +53,14 @@
 
 .mint {
     background-color: #43FE95;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding-bottom: 30px;
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
+    height: 150px;
 }
 
 .infos {
@@ -46,6 +74,25 @@
     font-size: 18px;
 }
 
+.funds {
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.funds div {
+    width: 50%;
+    margin: auto;
+    padding: 50px 0px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43FEF3;
+    border-radius: 15px;
+    color: black;
+}
+
 .cta-button {
     padding: 15px;
     border: none;
@@ -57,19 +104,29 @@
 }
 
 .connect-wallet-button {
-    background: rgb(32, 129, 226);
+    background: #434FFE;
+}
+
+.connect-wallet-button:hover {
+    background: rgba(67, 79, 254, 0.9);
 }
 
 .mint-nft-button {
-    background: orange;
+    background: rgb(242, 67, 254);
+}
+
+.mint-nft-button:hover {
+    background-color: rgba(242, 67, 254, 0.9);
 }
 
 .slider {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     width: 50%;
     justify-content: center;
     margin: auto;
+    border: 10px rgb(242, 67, 254) solid;
+    box-shadow: rgba(242, 67, 254, 0.35) 5px 10px 20px;
 }
 
 .img-auto {
@@ -84,9 +141,11 @@
     margin: auto;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-top: 100px;
 }
 
 .footer p:hover {
     color: lightpink;
     cursor: pointer;
+
 }

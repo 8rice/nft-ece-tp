@@ -164,6 +164,7 @@ function App() {
 
   return (
     <div className='main-app'>
+      <img alt='eth' className='floating-img' width={'50px'} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1024px-Earth_Western_Hemisphere_transparent_background.png" />
       <h1>Dogs For The Planet</h1>
       <div className='presentation'>
         <div className='mint'>
@@ -175,10 +176,15 @@ function App() {
         <div className='infos'>
           <div>Infos</div>
           <div className='wallet'>Address connected {currentAccount}</div>
-          <div className='balance'>Your balance is {balanceInEth} <img width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /></div>
+          <div className='balance'>Your balance is {balanceInEth} <img alt='eth' width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /></div>
         </div>
       </div>
-      <div className='funds'>The dogs raised {funds} <img width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /> !</div>
+      <div className='funds'>
+        <h3>The dogs raised</h3>
+        <div>
+          {funds} <img alt='eth' width={'25px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" />
+        </div>
+      </div>
 
       <div className='slider'>
         <AutoplaySlider
