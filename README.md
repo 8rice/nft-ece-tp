@@ -19,7 +19,7 @@ Pour finir, vous trouverez le total des fonds levés, qui seront par la suite re
 
 ## En quoi la Blockchain est importante dans ce projet
 
-La Blockchain prend une place importante au sein de notre projet. Dans un premier temps pour ce qui est de la sécurité des différnentes transactions. Mais aussi vis à vis de l'unicité de nos NFT car oui la définition même d'un NFT est qu'il possède un certificat d'authenticité numérique.
+La Blockchain prend une place importante au sein de notre projet. Dans un premier temps pour ce qui est de la sécurité des différentes transactions ainsi que pour le suivi et la tracabilité des fonds. Mais aussi vis à vis de l'unicité de nos NFT car oui la définition même d'un NFT est qu'il possède un certificat d'authenticité numérique.
 
 ## Made by
 
