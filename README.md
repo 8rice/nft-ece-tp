@@ -15,7 +15,7 @@ Vous pouvez donc rejoindre notre cause en récupérant vos NFT en appuyant sur l
 
 Spécialistes en blockchain, nous implémentons notre site web de vente de NFTs. Bien que chacun de nos tokens soit unique, tous s’inscrivent dans un même ensemble cohérent. Notre collection de "Swaggy Doggies" compte une centaine de chiens personnalisés aux looks complètement barrés. Vous pourrez jeter un coup d'oeil à cette collection grâce à notre carrousel. Le prix du mint coûte 0.005 ETH et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
 
-Pour finir, vous trouverez le total des fonds levés via la vente des NFTs au niveau de la section "The dogs raised". Seul les créateurs du contrat (Dogs For The Planet Association) ont accès aux fonds.
+Pour finir, vous trouverez le total des fonds levés via la vente des NFTs au niveau de la section "The dogs raised". Seul les créateurs du contrat (Dogs For The Planet Association) ont accès aux fonds et ont la possibilité de retirer les fonds du contrat.
 ![image](https://user-images.githubusercontent.com/38218882/200934176-d6800565-47d6-4970-b87f-95bf1d2fb705.png)
 
 
