@@ -165,13 +165,21 @@ function App() {
   return (
     <div className='main-app'>
       <h1>Dogs For The Planet</h1>
-      <h3>Get your NFT and participate in helping the planet</h3>
-      <div>
-        {currentAccount ? mintNftButton() : connectWalletButton()}
+      <div className='presentation'>
+        <div className='mint'>
+          <h3>Get your NFT and participate in helping the planet</h3>
+          <div>
+            {currentAccount ? mintNftButton() : connectWalletButton()}
+          </div>
+        </div>
+        <div className='infos'>
+          <div>Infos</div>
+          <div className='wallet'>Address connected {currentAccount}</div>
+          <div className='balance'>Your balance is {balanceInEth} <img width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /></div>
+        </div>
       </div>
-      <div>Address connected {currentAccount}</div>
-      <div>Your balance is {balanceInEth} ETH</div>
-      <div>The dogs raised {funds} ETH ! Incredible Thank You !</div>
+      <div className='funds'>The dogs raised {funds} <img width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /> !</div>
+
       <div className='slider'>
         <AutoplaySlider
           play={true}

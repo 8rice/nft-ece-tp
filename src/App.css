@@ -1,12 +1,49 @@
 .main-app {
     text-align: center;
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 25px;
-    background: rgb(102, 0, 152);
-    background: linear-gradient(90deg, rgba(102, 0, 152, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    background: rgb(242, 67, 254);
+    background: linear-gradient(130deg, rgba(242, 67, 254, 1) 0%, rgba(149, 67, 254, 1) 33%, rgba(67, 79, 254, 1) 100%);
     width: 100%;
     height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-app h1 {
+    font-size: 3em;
+    color: #43FE95;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.presentation {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mint {
+    background-color: #43FE95;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.infos {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 .cta-button {
