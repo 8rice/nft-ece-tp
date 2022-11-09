@@ -9,14 +9,32 @@ import 'react-awesome-slider/dist/styles.css';
 
 
 const contractAddress = "0x7c49DA33aa35eD4D5fc7A0F9a92976C7221EaDb5";
-/*const network = 'goerli';
-const provider = ethers.getDefaultProvider(network)*/
+const network = 'goerli';
+const apiKey = "3MAnoxl3mq5l2gKBYK7xh5R9-4MXy7Ca";
+const provider = new ethers.providers.AlchemyProvider(network, apiKey);
 
 function App() {
-
   const [currentAccount, setCurrentAccount] = useState(null);
-  /*const [balanceInEth, setBalanceInEth] = useState(null);*/
+  const [balanceInEth, setBalanceInEth] = useState(null);
+  const [funds, setFunds] = useState(null);
 
+  const displayBalances = async () => {
+    try {
+      const balances = await provider.getBalance(contractAddress);
+      if (balances.length !== 0) {
+        let balanceContract = balances;
+        balanceContract = ethers.utils.formatEther(balanceContract);
+        balanceContract = (+balanceContract).toFixed(4)
+        setFunds(balanceContract);
+        console.log(balanceContract)
+      } else {
+        console.log("Funds of contract not found");
+      }
+    } catch (e) {
+      console.log("error : rebuild app");
+    }
+
+  }
   const checkWalletIsConnected = async () => {
     const { ethereum } = window;
 
@@ -28,19 +46,25 @@ function App() {
     }
 
     const accounts = await ethereum.request({ method: 'eth_accounts' });
-
     if (accounts.length !== 0) {
       const account = accounts[0];
       console.log("Found an authorized account: ", account);
       setCurrentAccount(account);
-      /*provider.getBalance(currentAccount).then((balance) => {
-        // convert a currency unit from wei to ether
-        let res = ethers.utils.formatEther(balance);
-        //res = (+res).toFixed(4)
-        setBalanceInEth(balance);
-        console.log(`balance: ${balanceInEth} ETH`)
-        console.log(`res: ${res} ETH`)
-      }, [0])*/
+      try {
+        const balances = await provider.getBalance(account);
+        if (balances.length !== 0) {
+          let balance = balances;
+          balance = ethers.utils.formatEther(balance);
+          balance = (+balance).toFixed(4)
+          setBalanceInEth(balance);
+          console.log(balance)
+        } else {
+          console.log("Balance not found");
+
+        }
+      } catch (e) {
+        console.log("error : rebuild app");
+      }
     } else {
       console.log("No authorized account found");
     }
@@ -105,6 +129,7 @@ function App() {
 
   useEffect(() => {
     checkWalletIsConnected();
+    displayBalances();
   }, [])
 
   const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -145,11 +170,12 @@ function App() {
         {currentAccount ? mintNftButton() : connectWalletButton()}
       </div>
       <div>Address connected {currentAccount}</div>
-      <div>Your balance is ETH</div>
+      <div>Your balance is {balanceInEth} ETH</div>
+      <div>The dogs raised {funds} ETH ! Incredible Thank You !</div>
       <div className='slider'>
         <AutoplaySlider
           play={true}
-          cancelOnInteraction={false} // should stop playing on user interaction
+          cancelOnInteraction={true} // should stop playing on user interaction
           interval={2000}
         >
           {data.map((d) =>
@@ -159,7 +185,26 @@ function App() {
           )}
         </AutoplaySlider>
       </div>
-
+      <div className='footer'>
+        <div>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+        </div>
+        <div>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+        </div>
+        <div>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+          <p>Lorem</p>
+          <p>Ipsum</p>
+        </div>
+      </div>
     </div>
   )
 }

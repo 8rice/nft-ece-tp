@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "alchemy-sdk": "^2.2.1",
     "ethers": "^5.5.1",
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",
@@ -13,7 +14,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "4.0.3",
     "sass": "^1.56.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "web3": "^1.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
