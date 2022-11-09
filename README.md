@@ -6,7 +6,11 @@ Instructions to launche the app
 - run `npm start`
 - enjoy!
 
+## Description de l'app et comment l'utiliser
+
+## En quoi la Blockchain est importante dans ce projet
+
 ## Made by
-Lucas Menard
-Pierre Lapalut
-Brice Sabuco
+- Lucas Menard
+- Pierre Lapalut
+- Brice Sabuco
