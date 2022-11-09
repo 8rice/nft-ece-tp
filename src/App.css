@@ -41,6 +41,23 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.resume {
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+}
+
+.quisommesnous {
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .presentation {
     padding-top: 100px;
     display: flex;
@@ -74,23 +91,33 @@ h1 {
     font-size: 18px;
 }
 
+.infos h3,
+.funds h3 {
+    border-bottom: 4px solid #F243FE;
+}
+
 .funds {
     padding: 50px;
     width: 50%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .funds div {
     width: 50%;
     margin: auto;
     padding: 50px 0px;
-    font-size: 1.2em;
+    font-size: 1.75em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #43FEF3;
     border-radius: 15px;
     color: black;
+    font-family: monospace;
 }
 
 .cta-button {

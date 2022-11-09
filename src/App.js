@@ -166,6 +166,9 @@ function App() {
     <div className='main-app'>
       <img alt='eth' className='floating-img' width={'50px'} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1024px-Earth_Western_Hemisphere_transparent_background.png" />
       <h1>Dogs For The Planet</h1>
+      <div className='resume'>
+        Spécialiste en blockchain, nous implémentons notre site web de vente de NFT. Bien que chacun de nos tokens soit unique, tous s’inscrivent dans un même ensemble cohérent. Notre collection de "Swaggy Doggies" compte une centaine de chiens personnalisés aux looks complètement barrés. Le prix du mint coûte 0.005$ et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
+      </div>
       <div className='presentation'>
         <div className='mint'>
           <h3>Get your NFT and participate in helping the planet</h3>
@@ -174,7 +177,7 @@ function App() {
           </div>
         </div>
         <div className='infos'>
-          <div>Infos</div>
+          <h3>Infos</h3>
           <div className='wallet'>Address connected {currentAccount}</div>
           <div className='balance'>Your balance is {balanceInEth} <img alt='eth' width={'15px'} src="https://cryptologos.cc/logos/ethereum-eth-logo.png" /></div>
         </div>
@@ -199,12 +202,23 @@ function App() {
           )}
         </AutoplaySlider>
       </div>
+      <div className='quisommesnous'>
+        <h3> Qui sommes-nous ?</h3>
+        <div>
+          Nous sommes 3 étudiants en école d'ingénieur, passionnés par une même cause : la lutte pour la protection de l'environnement. Aujourd'hui, il ne fait plus aucun doute que notre planète est en danger. Pollution de l’air, difficile accès à l’eau potable, destruction des écosystèmes, hausse des canicules et des catastrophes naturelles, augmentation des zoonoses… les risques liés à l’environnement sont nombreux.
+        </div>
+        <div>
+          Désireux d'agir, nous réfléchissons alors à créer une association. Faute de temps et de moyens, nous décidons finalement d'aider des associations déjà existantes, qui luttent activement pour protéger l'environnement. Nous montons alors un projet qui permettrais de lever des fonds que nous investirons dans des associations.
+        </div>
+        <div>
+          Spécialistes en blockchain, nous implémentons notre site web de vente de NFT. Le prix du mint coûte 0.005 ETH et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
+        </div>
+        Alors n'attends plus, soit acteur de la protection de l'environnement !
+      </div>
       <div className='footer'>
         <div>
           <p>Contact</p>
           <p>Newsletter</p>
-          <p>Lorem</p>
-          <p>Ipsum</p>
         </div>
         <div>
           <p>Who are we</p>
@@ -215,8 +229,6 @@ function App() {
         <div>
           <p>About the project</p>
           <p>What's Next</p>
-          <p>Lorem</p>
-          <p>Ipsum</p>
         </div>
       </div>
     </div>
