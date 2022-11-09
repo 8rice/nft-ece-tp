@@ -167,7 +167,7 @@ function App() {
       <img alt='eth' className='floating-img' width={'50px'} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1024px-Earth_Western_Hemisphere_transparent_background.png" />
       <h1>Dogs For The Planet</h1>
       <div className='resume'>
-        Spécialiste en blockchain, nous implémentons notre site web de vente de NFT. Bien que chacun de nos tokens soit unique, tous s’inscrivent dans un même ensemble cohérent. Notre collection de "Swaggy Doggies" compte une centaine de chiens personnalisés aux looks complètement barrés. Le prix du mint coûte 0.005$ et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
+        Spécialistes en blockchain, nous implémentons notre site web de vente de NFT. Bien que chacun de nos tokens soit unique, tous s’inscrivent dans un même ensemble cohérent. Notre collection de "Swaggy Doggies" compte une centaine de chiens personnalisés aux looks complètement barrés. Le prix du mint coûte 0.005 ETH et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
       </div>
       <div className='presentation'>
         <div className='mint'>
@@ -209,9 +209,6 @@ function App() {
         </div>
         <div>
           Désireux d'agir, nous réfléchissons alors à créer une association. Faute de temps et de moyens, nous décidons finalement d'aider des associations déjà existantes, qui luttent activement pour protéger l'environnement. Nous montons alors un projet qui permettrais de lever des fonds que nous investirons dans des associations.
-        </div>
-        <div>
-          Spécialistes en blockchain, nous implémentons notre site web de vente de NFT. Le prix du mint coûte 0.005 ETH et ce profit est directement reversé à des associations qui luttent pour la même cause que nous.
         </div>
         Alors n'attends plus, soit acteur de la protection de l'environnement !
       </div>

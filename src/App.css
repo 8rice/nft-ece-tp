@@ -114,7 +114,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #43FEF3;
+    background-color: rgba(67, 254, 243);
     border-radius: 15px;
     color: black;
     font-family: monospace;
